@@ -11,12 +11,16 @@
     <form action="create.php" method="POST">
         <label for="task_name">Task Name:</label>
         <input type="text" id="task_name" name="task_name" required><br>
-
+    
         <label for="task_description">Task Description:</label>
         <textarea id="task_description" name="task_description" required></textarea><br>
-
+    
+        <label for="due_date">Due Date:</label>
+        <input type="date" id="due_date" name="due_date" required><br>
+    
         <button type="submit">Create Task</button>
     </form>
+    
 
     <h2>All Tasks</h2>
     <div id="task-list">
