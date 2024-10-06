@@ -2,10 +2,10 @@
 $servername = "localhost";
 $username = "root"; // adjust if needed
 $password = "";     // adjust if needed
-$dbname = "task_manager";
+$dbname = "taskManager";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname, 3307);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
