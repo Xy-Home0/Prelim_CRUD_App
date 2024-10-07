@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Create a New Task</h1>
@@ -28,6 +28,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script> <!-- Optional JS -->
+    <script src="scripts.js"></script>
 </body>
 </html>
