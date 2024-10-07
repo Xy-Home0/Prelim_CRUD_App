@@ -32,7 +32,6 @@ button:hover {
     border-radius: 5px;
 }
 
-/* Common form styling */
 .form-container {
     width: 300px;
     margin: 0 auto;
@@ -81,7 +80,7 @@ button:hover {
 #logout-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #dc3545; /* Red color for logout */
+    background-color: #dc3545;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -89,5 +88,5 @@ button:hover {
 }
 
 #logout-link:hover {
-    background-color: #c82333; /* Darker red on hover */
+    background-color: #c82333;
 }
