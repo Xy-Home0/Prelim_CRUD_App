@@ -9,6 +9,7 @@ if ($result->num_rows > 0) {
         echo "<h2>" . $row['task_name'] . "</h2>";
         echo "<p>" . $row['task_description'] . "</p>";
         echo "<p>Created At: " . $row['created_at'] . "</p>";
+        echo "<p>Due Date: " . $row['due_date'] . "</p>";
         echo "<button class='edit-btn' data-id='" . $row['id'] . "'>Edit</button>";
         echo "<button class='delete-btn' data-id='" . $row['id'] . "'>Delete</button>";
         echo "</div>";

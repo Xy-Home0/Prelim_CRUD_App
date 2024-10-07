@@ -40,4 +40,36 @@ $(document).ready(function () {
             });
         }
     });
+
+
+    $(document).ready(function() {
+        $('#logout-link').click(function(e) {
+
+            if (!confirm('Are you sure you want to log out?')) {
+                e.preventDefault();
+            }
+        })
+    });
+
+    $(document).ready(function() {
+        $('#registration-form').on('submit', function(e) {
+            // Get the password and confirm password values
+            var password = $('#password').val();
+            var confirmPassword = $('#confirm_password').val();
+    
+            // Check if the passwords match
+            if (password !== confirmPassword) {
+                e.preventDefault(); // Prevent form submission if passwords don't match
+                alert('Passwords do not match. Please try again.');
+            } else {}
+        });
+    });
+    
+    $(document).ready(function() {
+        const urlParams = new URLSearchParams();
+
+        if (urlParams.has('success')) {
+            $('#task-form')[0].reset();
+        }
+    });    
 });

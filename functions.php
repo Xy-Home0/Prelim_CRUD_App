@@ -2,10 +2,14 @@
 include 'database.php';
 
 // Function to create a task
-function createTask($task_name, $task_description) {
+function createTask($task_name, $task_description, $due_date) {
     global $conn;
-    $sql = "INSERT INTO tasks (task_name, task_description) VALUES ('$task_name', '$task_description')";
-    return $conn->query($sql);
+
+    // Prepare the SQL statement to prevent SQL injection
+    $stmt = $conn->prepare("INSERT INTO tasks (task_name, task_description, due_date) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $task_name, $task_description, $due_date);
+    
+    return $stmt->execute();
 }
 
 // Function to get all tasks
